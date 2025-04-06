@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Emotion Music Player</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emotion-Based Music Player</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.9.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
-  <style>
-    body { text-align: center; font-family: sans-serif; background: #111; color: white; }
-    video { border: 2px solid white; margin-top: 20px; }
-  </style>
 </head>
 <body>
-  <h1>🎵 Emotion Music Player</h1>
-  <video id="video" width="640" height="480" autoplay muted></video>
-  <p id="emotion">Detecting Emotion...</p>
+  <h1>🎵 Emotion-Based Music Player</h1>
+  <video id="video" autoplay muted playsinline></video>
+  <p id="emotion">Detecting...</p>
   <audio id="player" autoplay loop></audio>
 
   <script src="script.js"></script>
-</body>
-</html>
-
-    </audio>
-  </div>
 </body>
 </html>
