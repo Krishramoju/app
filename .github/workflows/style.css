@@ -1,0 +1,25 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+video {
+  border-radius: 10px;
+  width: 640px;
+  max-width: 90%;
+  border: 2px solid white;
+}
+
+#emotion {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #0ff;
+}
