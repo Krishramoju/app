@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Emotion Music Player 🎶</title>
-  <script defer src="https://unpkg.com/face-api.js"></script>
-  <script defer src="script.js"></script>
+  <title>Emotion Music Player</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.9.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
   <style>
-    body {
-      background: #121212;
-      color: white;
-      text-align: center;
-      font-family: Arial;
-      margin: 0;
-      padding: 2rem;
-    }
-    video {
-      border-radius: 15px;
-      width: 480px;
-    }
-    .music-box {
-      margin-top: 30px;
-    }
-    h1 {
-      margin-bottom: 1rem;
-    }
+    body { text-align: center; font-family: sans-serif; background: #111; color: white; }
+    video { border: 2px solid white; margin-top: 20px; }
   </style>
 </head>
 <body>
-  <h1>🎵 Webcam Emotion Music Player</h1>
-  <p>Look into the camera and let your face pick your vibe!</p>
-  <video id="video" autoplay muted></video>
-  <div class="music-box">
-    <h3 id="emotion-label">Detecting emotion...</h3>
-    <audio id="music-player" controls autoplay>
-      <source id="music-src" src="" type="audio/mpeg">
-      Your browser does not support audio playback.
+  <h1>🎵 Emotion Music Player</h1>
+  <video id="video" width="640" height="480" autoplay muted></video>
+  <p id="emotion">Detecting Emotion...</p>
+  <audio id="player" autoplay loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
     </audio>
   </div>
 </body>
